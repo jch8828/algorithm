@@ -20,6 +20,7 @@ import java.util.List;
  *
  */
 public class GenerateParentheses {
+
   public static void main(String[] args) {
     List<String> res = new ArrayList<>();
     generateParentheses(2, 2, "", res);
@@ -34,7 +35,11 @@ public class GenerateParentheses {
       return;
     }
     // Need to check the left > 0
-    if (left > 0) generateParentheses(left-1, right, path + "(", res);
-    if (right > 0 && left < right) generateParentheses(left, right-1, path + ")", res);
+    if (left > 0) {
+      generateParentheses(left - 1, right, path + "(", res);
+    }
+    if (right > 0 && left < right) {
+      generateParentheses(left, right - 1, path + ")", res);
+    }
   }
 }

@@ -23,6 +23,7 @@ import java.util.Map;
  *      Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
  */
 public class LongestSubstringWithoutRepeatingCharacters {
+
   public static void main(String[] args) {
     System.out.printf("abcabcbb: %s\n", longestSubstring("abcabcbb"));
     System.out.printf("bbbbb: %s\n", longestSubstring("bbbbb"));
@@ -31,8 +32,12 @@ public class LongestSubstringWithoutRepeatingCharacters {
   }
 
   public static int longestSubstring(String s) {
-    if (s == null) throw new IllegalArgumentException();
-    if (s.length() < 1) return s.length();
+    if (s == null) {
+      throw new IllegalArgumentException();
+    }
+    if (s.length() < 1) {
+      return s.length();
+    }
 
     Map<Character, Boolean> map = new HashMap<>(); // could use HashSet here, HashMap is better
     int max = 0;
