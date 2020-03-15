@@ -33,7 +33,7 @@ public class GenerateParentheses {
   //  Don't use StringBuilder since it passes by reference
   public static void generateParentheses(int left, int right, String path, List<String> res) {
     if (left == 0 && right == 0) {
-      res.add(path.toString());
+      res.add(path);
       return;
     }
     // Need to check the left > 0
