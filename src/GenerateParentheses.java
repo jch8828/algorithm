@@ -2,11 +2,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Title:      22. Generate Parentheses
  * Source:     https://leetcode.com/problems/generate-parentheses/
  * Difficulty: Medium
- * Note:
+ *
+ * Description:
  *     Given n pairs of parentheses, write a function to generate all combinations of well-formed
  *     parentheses.
+ *
  * Example:
  *    given n = 3, a solution set is:
  *
@@ -17,7 +20,6 @@ import java.util.List;
  *   "()(())",
  *   "()()()"
  * ]
- *
  */
 public class GenerateParentheses {
 

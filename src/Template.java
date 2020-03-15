@@ -1,7 +1,9 @@
 /**
+ * Title:      <number>. <title>
  * Source:     https://leetcode.com/problems/<?????>
  * Difficulty: Easy/Medium/Hard
- * Note:
+ *
+ * Description:
  *
  * Example:
  *
