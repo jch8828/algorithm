@@ -13,4 +13,8 @@ public class Template {
   public static void main(String[] args) {
 
   }
+
+  public void solve() {
+    return;
+  }
 }

@@ -29,10 +29,11 @@ import java.util.List;
 public class MergeIntervals {
 
   public static void main(String[] args) {
+    new MergeIntervals().merge(Collections.emptyList());
 
   }
 
-  public static List<Interval> merge(List<Interval> intervals) {
+  public List<Interval> merge(List<Interval> intervals) {
     if (intervals == null || intervals.size() < 2) {
       return intervals;
     }

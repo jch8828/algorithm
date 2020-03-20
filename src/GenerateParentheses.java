@@ -25,13 +25,13 @@ public class GenerateParentheses {
 
   public static void main(String[] args) {
     List<String> res = new ArrayList<>();
-    generateParentheses(2, 2, "", res);
+    new GenerateParentheses().generateParentheses(2, 2, "", res);
     System.out.println(res);
 
   }
 
   //  Don't use StringBuilder since it passes by reference
-  public static void generateParentheses(int left, int right, String path, List<String> res) {
+  public void generateParentheses(int left, int right, String path, List<String> res) {
     if (left == 0 && right == 0) {
       res.add(path);
       return;

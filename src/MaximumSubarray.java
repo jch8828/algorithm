@@ -14,18 +14,19 @@
 public class MaximumSubarray {
 
   public static void main(String[] args) {
+    MaximumSubarray maximumSubarray = new MaximumSubarray();
     int[] nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
-    System.out.printf("Max subarray of [-2,1,-3,4,-1,2,1,-5,4]: %s\n", maximumSubarray(nums));
+    System.out.printf("Max subarray of [-2,1,-3,4,-1,2,1,-5,4]: %s\n", maximumSubarray.maximumSubarray(nums));
 
     int[] nums2 = {-2, -1, -3, -4, -1, -2, 1, -5, 4};
-    System.out.printf("Max subarray of [-2,-1,-3,-4,-1,-2,1,-5,4]: %s\n", maximumSubarray(nums2));
+    System.out.printf("Max subarray of [-2,-1,-3,-4,-1,-2,1,-5,4]: %s\n", maximumSubarray.maximumSubarray(nums2));
 //    System.out.printf("Max subarray of null: %s\n", maximumSubarray(null));
 
     int[] nums3 = {5, 4};
-    System.out.printf("Max subarray of [5,4]: %s\n", maximumSubarray(nums3));
+    System.out.printf("Max subarray of [5,4]: %s\n", maximumSubarray.maximumSubarray(nums3));
   }
 
-  public static int maximumSubarray(int[] nums) {
+  public int maximumSubarray(int[] nums) {
     if (nums == null || nums.length < 1) {
       throw new IllegalArgumentException("Empty array");
     }

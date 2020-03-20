@@ -32,10 +32,10 @@ public class NumberOfIslands {
         {'0', '0', '1', '0', '0'},
         {'0', '0', '0', '1', '1'},
     };
-    System.out.println(numberOfIslands(grid));
+    System.out.println(new NumberOfIslands().numberOfIslands(grid));
   }
 
-  public static int numberOfIslands(char[][] grid) {
+  public int numberOfIslands(char[][] grid) {
     if (grid == null) {
       throw new IllegalArgumentException();
     }
